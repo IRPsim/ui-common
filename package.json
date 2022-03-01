@@ -1,0 +1,21 @@
+{
+  "name": "ui-common",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-angular-templatecache": "^1.8.0",
+    "gulp-concat": "^2.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gitolite3@irpsim.uni-leipzig.de:ui-common"
+  },
+  "author": "",
+  "license": "MIT"
+}

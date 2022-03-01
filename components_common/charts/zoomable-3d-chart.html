@@ -1,0 +1,20 @@
+<div id="plotly"></div>
+
+<div>
+    <label for="slider1" >Minimum: {{currentMin}}
+        <input id="slider1" type="range" min="{{range[0]}}" max="{{currentMax}}" step="{{(currentMax - range[0]) / 100}}"
+               ng-model="currentMin"
+               style="width:300px"
+               ng-change="setMin(currentMin)">
+    </label>
+
+    <label for="slider2">Maximum: {{currentMax}}
+        <input id="slider2" type="range" min="{{currentMin}}" max="{{range[1]}}" step="{{(range[1] - currentMin) / 100}}"
+               ng-model="currentMax"
+               style="width:300px"
+               ng-change="setMax(currentMax)">
+    </label>
+</div>
+
+
+

@@ -1,0 +1,10 @@
+<download class="hidden-print"
+          data="data"
+          content-type="{{contentType}}"
+          filename="{{filename}}">
+  <span class="glyphicon glyphicon-floppy-save"></span>
+</download>
+<button class="btn btn-default btn-file">
+  <span class="glyphicon glyphicon-floppy-open"></span>
+  <input  type="file" on-read-file="loadFile($fileContent)">
+</button>

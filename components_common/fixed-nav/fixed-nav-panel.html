@@ -1,0 +1,28 @@
+<button ng-class="{iconFixedRight: !open,
+                   iconSelected: open && active,
+                   iconNotSelected: open && !active}"
+        style="top: {{33*id + 'px'}}; z-index: 601"
+        class="btn iconBasic"
+        ng-click= "setActive()"
+        uib-tooltip="{{tooltipText}}"
+        tooltip-placement="left">
+  <span class="{{icon}}" title="{{title}}"></span>
+</button>
+<div ng-if="destroy">
+  <div class="fixedPanel"
+       ng-if="active"
+       ng-style="{'z-index': 15,
+                height: height}">
+    <div class="wrappedPanelDiv" style="height: calc(100% - 20px)" ng-transclude></div>
+  </div>
+</div>
+<div ng-if="!destroy">
+  <div class="fixedPanel"
+       ng-show="active"
+       ng-style="{'z-index': 15,
+                height: height}">
+    <div class="wrappedPanelDiv" style="height: calc(100% - 20px)" ng-transclude></div>
+  </div>
+</div>
+
+
